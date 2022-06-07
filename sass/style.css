@@ -1,0 +1,388 @@
+@charset "UTF-8";
+/**** Variáveis ****/
+/** Reset **/
+* {
+  font-family: "Josefin Sans";
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  color: #777;
+}
+body a {
+  color: #777;
+  text-decoration: none;
+  transition: 0.4s;
+}
+body ul {
+  list-style: none;
+}
+
+/**** Minxins ****/
+/*** Header ***/
+header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1170px;
+  padding: 1.5rem 0;
+  margin: 0 5rem;
+}
+header .header-brand {
+  color: rgb(255, 255, 255);
+  font-size: 3rem;
+  overflow: hidden;
+}
+header .header-brand:hover {
+  color: #63ce59;
+  transition: 1s;
+}
+header .header-navbar ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .header-navbar li {
+  margin: 0 1rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+header .header-navbar li a:hover {
+  color: #63ce59;
+}
+header .header-social-media ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+header .header-social-media ul li {
+  margin: 0 1rem;
+}
+header .header-social-media ul li a:hover {
+  color: rgb(255, 255, 255);
+}
+
+/*** Gallery ***/
+main header h2 {
+  color: rgb(255, 255, 255);
+  font-size: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+main header .city:hover {
+  color: #63ce59;
+  transition: 1s;
+  cursor: default;
+}
+
+.gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1170px;
+  padding: 1.5rem 0;
+  margin: 0 5rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.gallery .gallery-card {
+  width: 31%;
+  height: 400px;
+  margin-bottom: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: rgb(255, 255, 255);
+}
+.gallery .gallery-card .gallery-card-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+.gallery .gallery-card .gallery-card-btn {
+  padding: 0.6rem 2rem;
+  border: 2px solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+.gallery .gallery-card .gallery-card-btn:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  transition: 0.3s;
+}
+.gallery #card1 {
+  background-image: url("../images/restaurantes.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.gallery #card1:hover {
+  overflow: hidden;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/restaurantes.jpeg");
+  cursor: pointer;
+  -moz-transition: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: 1s;
+}
+.gallery #card2 {
+  background-image: url("../images/museus.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.gallery #card2:hover {
+  overflow: hidden;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/museus.jpg");
+  cursor: pointer;
+  -moz-transition: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: 1s;
+}
+.gallery #card3 {
+  background-image: url("../images/bares.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.gallery #card3:hover {
+  overflow: hidden;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/bares.jpg");
+  cursor: pointer;
+  -moz-transition: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: 1s;
+}
+.gallery #card4 {
+  background-image: url("../images/pracas.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.gallery #card4:hover {
+  overflow: hidden;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/pracas.jpg");
+  cursor: pointer;
+  -moz-transition: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: 1s;
+}
+.gallery #card5 {
+  background-image: url("../images/shopping.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.gallery #card5:hover {
+  overflow: hidden;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/shopping.jpg");
+  cursor: pointer;
+  -moz-transition: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: 1s;
+}
+.gallery #card6 {
+  background-image: url("../images/ponto-turistico.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.gallery #card6:hover {
+  overflow: hidden;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/ponto-turistico.jpg");
+  cursor: pointer;
+  -moz-transition: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: 1s;
+}
+.gallery #card7 {
+  background-image: url("../images/feiras.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.gallery #card7:hover {
+  overflow: hidden;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/feiras.jpg");
+  cursor: pointer;
+  -moz-transition: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: 1s;
+}
+.gallery #card8 {
+  background-image: url("../images/eventos.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.gallery #card8:hover {
+  overflow: hidden;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/eventos.jpg");
+  cursor: pointer;
+  -moz-transition: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: 1s;
+}
+.gallery #card9 {
+  background-image: url("../images/teatro.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.gallery #card9:hover {
+  overflow: hidden;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/teatro.jpg");
+  cursor: pointer;
+  -moz-transition: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: 1s;
+}
+
+/** Footer **/
+footer {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+footer span {
+  color: #63ce59;
+}
+
+@media screen and (max-width: 670px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  header.header-brand {
+    width: 100vw;
+    text-align: center;
+  }
+  header ul {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 1rem;
+  }
+  .header-navbar {
+    display: flex;
+  }
+  .header-navbar ul li {
+    margin: 0;
+  }
+  .header-social-media {
+    display: none;
+  }
+  .gallery {
+    display: block;
+    width: 100vw;
+    margin: 0;
+  }
+  .gallery .gallery-card {
+    width: 93vw;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 671px) and (max-width: 1023px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    margin: 0;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  header.header-brand {
+    width: 99.9vw;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  header .header-social-media {
+    display: none;
+  }
+  header a {
+    margin-bottom: 1rem;
+  }
+  .gallery {
+    display: flex;
+    width: 99vw;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .gallery .gallery-card {
+    height: 60vh;
+    margin-bottom: 3rem;
+    margin-left: 1rem;
+  }
+  .gallery .gallery-card .gallery-card-title {
+    font-size: 1.9rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
