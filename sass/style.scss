@@ -2,7 +2,7 @@
 
 $primary-color: rgb(255, 255, 255);
 $secondary-color: #63ce59;
-$text-color: #777;
+$text-color: rgb(123, 120, 120);
 $bg-color: rgb(0, 0, 0);
 
 $container-width: 1170px;
@@ -21,7 +21,7 @@ body {
     color: $text-color;
 
     a {
-        color: $text-color;
+        color: $primary-color;
         text-decoration: none;
         transition: .4s;
     }
