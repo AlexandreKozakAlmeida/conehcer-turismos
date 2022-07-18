@@ -1,5 +1,7 @@
 # conhecer-turismos
 
+Acesse o resultado do projeto: https://alexandrekozakalmeida.github.io/conhecer-turismos/
+
 A conhecer turismos te ajuda não a somente escolher o local para onde viajar, mas também te mostra tudo o que é possível fazer em seu destino escolhido.
 
 Esse projeto surgiu com uma pesquisa sobre sasscss, e para entender como funciona esse formato foi oferecido pelo instrutor um projeto utilizaria algumas das propriedades do sass. Tendo estudado a linguagem então, o projeto foi executado com sucesso.
